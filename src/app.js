@@ -10,7 +10,9 @@ const usuarioRoutes = require('./routes/usuarioRoute');
 
 //MONGODB
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost/pichanga', {
+
+mongoose.connect('mongodb://dilan:dilan95@ds223763.mlab.com:23763/pichangadb', {
+        //mongoose.connect('mongodb://localhost/pichanga', {
         useNewUrlParser: true
     }).then(db => console.log('Conexion Mongodb exitosa.'))
     .catch(err => console.log(err));
